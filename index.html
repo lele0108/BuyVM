@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="BuyVM">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,10 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,13 +21,85 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body ng-controller="bodyController">
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h1>Buy<span>VM</span></h1>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><span>Home</span></li>
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>FAQ</li>
+              <li>Wiki</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul class="text-right">
+              <li>Login</li>
+              <li><b>Signup</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main">
+
+    <!-- angular templating -->
+    <!-- this is where content will be injected -->
+      <div ng-view></div>
+
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <hr style="margin-bottom:70px;">
+            <div class="row">
+              <div class="col-lg-2 col-lg-offset-2">
+                <h5>Products</h5>
+                <ul>
+                  <li>OpenVZ VPS</li>
+                  <li>KVM VPS</li>
+                  <li>Storage Servers</li>
+                  <li>MySQL Hosting</li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <h5>Support</h5>
+                <ul>
+                  <li>Client Login</li>
+                  <li>Create a Ticket</li>
+                  <li>Billing Panel</li>
+                  <li>Pay an invoice</li>
+                </ul>
+              </div>
+              <div class="col-lg-2">
+                <h5>About</h5>
+                <ul>
+                  <li>About Us</li>
+                  <li>FAQ</li>
+                  <li>Terms and Conditions</li>
+                </ul>
+              </div>
+              <div class="col-lg-1 col-lg-offset-1">
+                <h1>Buy<span>VM</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
