@@ -23,6 +23,10 @@ body {
 	ul {
 		margin-top:30px;
 	}
+	a {
+		color:white;
+		text-decoration:none;
+	}
 	li {
 		margin: 0px 30px 0px 0px;
 		display:inline;
@@ -102,6 +106,10 @@ body {
 		}
 		margin-bottom:30px;
 	}
+	a {
+		color:white;
+		text-decoration:none;
+	}
 }
 
 .awesome {
@@ -112,6 +120,9 @@ body {
 	border: 2px solid white;
 	border-radius:5px;
 	margin-right:25px;
+	&:hover {
+		opacity:0.7;
+	}
 }
 
 .green {
@@ -130,6 +141,9 @@ body {
 	padding: 10px 7px 7px 10px;
 	p {
 		margin-bottom:2px;
+	}
+	&:hover {
+		opacity:0.7;
 	}
 }
 
